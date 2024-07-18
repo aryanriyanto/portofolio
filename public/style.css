@@ -688,6 +688,9 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.flex-vis {
+  flex-direction: 3;
+}
 
 .place-items-center {
   place-items: center;
@@ -916,6 +919,9 @@ video {
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.sizeto {
+  font-size: 0.8rem;
+}
 
 .text-3xl {
   font-size: 1.875rem;
@@ -1028,7 +1034,7 @@ video {
 }
 
 .opacity-50 {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .shadow-lg {
@@ -1066,4 +1072,18 @@ video {
   .dark\:inline {
     display: inline;
   }
+}
+
+
+/* CSS untuk gambar yang akan di-zoom */
+.zoom-img {
+  transition: transform 0.2s ease;
+}
+
+/* CSS untuk mengubah skala gambar saat dihover atau diklik */
+.zoom-img:hover,
+.zoom-img:active,
+.zoom-img:focus {
+  transform: scale(1.1); /* Misalnya, skala 1.1 untuk efek zoom */
+  transition: transform 0.2s ease;
 }
