@@ -636,7 +636,12 @@ video {
 .w-9\/12 {
   width: 75%;
 }
-
+.w-8\/12 {
+  width : 35.67%
+}
+.w-9\/20 {
+  width: 80%;
+}
 .w-full {
   width: 100%;
 }
@@ -720,6 +725,9 @@ video {
 
 .gap-20 {
   gap: 5rem;
+}
+.gap-50 {
+  gap : 50rem;
 }
 
 .gap-5 {
@@ -922,7 +930,7 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 .sizeto {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .text-3xl {
@@ -1088,4 +1096,24 @@ video {
 .zoom-img:focus {
   transform: scale(1.1); /* Misalnya, skala 1.1 untuk efek zoom */
   transition: transform 0.2s ease;
+}
+.slide {
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+.slide.fade {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+.slide.active {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
